@@ -49,7 +49,7 @@ class test_ver_1(unittest.TestCase):
     @mock.patch("app.coll.find",return_value= var)  
     def test_uno (self,mock_A):
         mock_A.called
-        self.assertEqual(ver("janedoe@email.com"),{"inflow":{"salary":"0","savings":"0"},"outflow":{"groceries":"0","rent":"0","transfer":"0"}})
+        self.assertEqual(ver("janedoe@email.com"),{"inflow":{"salary":"2500.72","savings":"150.72"},"outflow":{"groceries":"-51.13","rent":"-560.0","transfer":"-150.72"}})
 
 if __name__ =='__main__':
  unittest.main()
